@@ -60,7 +60,7 @@ ENDFUNCTION
 ####**ii**  Line 06
 
 ####**3(b)**
-Call Varible | Procedure call | (Result=1) or (Result=0)| Result | Return Value |
+Call Varible | Procedure call | (n=1) or (n=0)| Result | Return Value |
 --- | --- | --- | --- | ---
 1 | Fibonacci(4) | False | Fibonacci(3) |  
 2 | Fibonacci(3) | False | Fibonacci(2) |  
@@ -71,3 +71,5 @@ Call Varible | Procedure call | (Result=1) or (Result=0)| Result | Return Value 
 7 | Fibonacci(1) | True | Fibonacci(0) | 1
 (3) |  | True |  | 1
 8 | Fibonacci(0) | True | 1 | 1
+(7)|||1
+(1)|||3
