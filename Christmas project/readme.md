@@ -5,7 +5,7 @@
 ### If peole show the same emotion as the screen, they get points.
 
 
-### In this program you may need download opencv and numpy for your 
+### In this program you may need download opencv and numpy for your python
 ``` python
 
 import cv2
