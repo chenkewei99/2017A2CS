@@ -3,7 +3,7 @@
 
 ```Python
     class CustomerRecord :
-        def \_\_init\_\_(self) :
+        def __init__(self) :
             self.CustomerID = 0
             self.CustomerName = ""
             self.TelNumber = 0
@@ -11,7 +11,7 @@
 ```
 ### a(ii)
 ```Python
-    CustomerData = \[CustomerRecord() for i in range(10)\]
+    CustomerData = [CustomerRecord() for i in range(10)]
 ```
 ### b(i)
 
@@ -28,13 +28,13 @@
             address += 1
             if address == 1000 :
             address = 0
-            CustomerData\[address\] = Customer
+            CustomerData[address] = Customer
 ```
 ### b(iii)
 ```Python
     def FindRecord(CustomerData, ID):
         address = Hash(ID)
-        while CustomerData\[address\].CustomerID != ID :
+        while CustomerData[address].CustomerID != ID :
             address += 1
             if address == 1000:
                 address = 0
@@ -49,7 +49,7 @@
     def SaveData(CustomerData) :
         CustomerFile = open('CustomerData.Dat','wb')
         for i in range(1000) :
-            pickle.dump(CustomerData\[i\], CustomerFile)
+            pickle.dump(CustomerData[i], CustomerFile)
         CustomerFile.close()
 ```
 
