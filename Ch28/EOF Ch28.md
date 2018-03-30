@@ -4,9 +4,10 @@
 
 ### MASK: #B00001111 // mask
 
-### c 
-| - | - | - | - |
+### c
 | Label | Opcode | Operand | Explanation |
+| - | - | - | - |
+
 |  | IN | | input first digit |
 |  | AND | Mask | convert from ASCII to its digit value |
 |  | LSL | #4 | move to upper nibble |
@@ -19,9 +20,9 @@
 | Result: | &00 | | memory location for result |
 
 ### 2
-
-| - | - | - | - |
 | Label | Opcode | Operand | Explanation |
+| - | - | - | - |
+
 |  | LDR | #0 | set index register to zero |
 | LOOP: | IN |  | input character |
 |  | STI | STRING | store it at STRING (modified by index register) |
